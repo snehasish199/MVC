@@ -1,0 +1,16 @@
+﻿@model MVCHandsOnPractice.Models.Student
+@{
+    ViewBag.Title = "GetStudent";
+}
+
+<h2>GetStudent</h2>
+
+<h3 style="color:red">@ViewBag.Result</h3>
+
+
+<h4>@Html.DisplayNameFor(x=>x.Id) -  @Html.DisplayFor(Model=>Model.Id) </h4>
+<hr />
+<h4>@Html.DisplayNameFor(x => x.Name) -  @Html.DisplayFor(Model => Model.Name) </h4>
+
+<hr />
+<h4>@Html.DisplayNameFor(x => x.Email) -  @Html.DisplayFor(Model => Model.Email) </h4>
