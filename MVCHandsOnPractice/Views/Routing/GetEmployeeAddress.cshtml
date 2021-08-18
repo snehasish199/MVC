@@ -1,4 +1,4 @@
-﻿@model MVCHandsOnPractice.Models.Employee
+﻿@model MVCHandsOnPractice.Models.EmployeeModel
 @{
     ViewBag.Title = "GetEmployeeAddress";
 }
@@ -7,8 +7,8 @@
 
 <h3 class="text-danger">@ViewBag.Result</h3>
 
-<h4>@Html.DisplayNameFor(Model => Model.Id)  -  @Html.DisplayFor(Model => Model.Id) </h4>
-<h4>@Html.DisplayNameFor(Model => Model.Name)  -  @Html.DisplayFor(Model => Model.Name) </h4>
+<h4>@Html.DisplayNameFor(Model=>Model.Id) - @Html.DisplayFor(Model=>Model.Id)</h4>
+<h4>@Html.DisplayNameFor(Model => Model.Name) - @Html.DisplayFor(Model => Model.Name)</h4>
 
 <h4>@Html.DisplayNameFor(Model => Model.Address)  -  @Html.DisplayFor(Model => Model.Address) </h4>
 

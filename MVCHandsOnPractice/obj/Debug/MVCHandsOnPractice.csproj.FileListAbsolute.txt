@@ -70,3 +70,7 @@ C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPra
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\obj\Debug\MVCHandsOnPractice.csproj.CopyComplete
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\obj\Debug\MVCHandsOnPractice.dll
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\obj\Debug\MVCHandsOnPractice.pdb
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.xml
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.SqlServer.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.SqlServer.xml

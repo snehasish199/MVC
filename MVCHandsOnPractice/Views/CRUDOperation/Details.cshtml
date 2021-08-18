@@ -1,0 +1,96 @@
+﻿@model MVCHandsOnPractice.Models.EmployeeModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div>
+    <h4>Employee Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <hr />
+        <hr />
+
+        <h2>Address</h2>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address1.Details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address1.Details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address1.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address1.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address1.PinCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address1.PinCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address1.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address1.Country)
+        </dd>
+
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) 
+    @Html.ActionLink("Back to List", "AllEmployee")
+</p>

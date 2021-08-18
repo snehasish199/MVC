@@ -58,58 +58,58 @@ namespace MVCHandsOnPractice.Controllers
             }
             return View(EmpObj);
         }
-        private List<Employee> AllEmployeeDetails()
+        private List<EmployeeModel> AllEmployeeDetails()
         {
-            return new List<Employee>()
+            return new List<EmployeeModel>()
             {
-                new Employee()
+                new EmployeeModel()
                 {
                     Id=1,
                     Name="Snehasish Pramanik",
                     Email="snehasish@nagarro.com",
                     Address="West Bengal",
                     DateOfBirth=new DateTime(1998,4,14),
-                    gender="Male"
+                   Gender="Male"
 
                 },
-                 new Employee()
+                 new EmployeeModel()
                 {
                     Id=2,
                     Name="Puspendu Khan",
                     Email="puspendu@nagarro.com",
                     Address="West Bengal",
                     DateOfBirth=new DateTime(1999,8,17),
-                    gender="Male"
+                    Gender="Male"
 
                 },
-                  new Employee()
+                  new EmployeeModel()
                 {
                     Id=1,
                     Name="Vivek Agarwal",
                     Email="vivek@nagarro.com",
                     Address="Uttar Pradesh",
                     DateOfBirth=new DateTime(1998,7,4),
-                    gender="Male"
+                    Gender="Male"
 
                 },
-                   new Employee()
+                   new EmployeeModel()
                 {
                     Id=4,
                     Name="Pratik Sutradhar",
                     Email="pratik@nagarro.com",
                     Address="West Bengal",
                     DateOfBirth=new DateTime(1999,12,24),
-                    gender="Male"
+                    Gender="Male"
 
                 },
-                    new Employee()
+                    new EmployeeModel()
                 {
                     Id=5,
                     Name="Sandeep Panjiyaar",
                     Email="sarat@nagarro.com",
                     Address="Assam",
                     DateOfBirth=new DateTime(1996,12,29),
-                    gender="Male"
+                    Gender="Male"
 
                 }
 

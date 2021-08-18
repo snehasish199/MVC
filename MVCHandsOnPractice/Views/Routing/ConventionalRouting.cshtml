@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MVCHandsOnPractice.Models.Employee>
+﻿@model IEnumerable<MVCHandsOnPractice.Models.EmployeeModel>
 
 @{
     ViewBag.Title = "ConventionalRouting";
@@ -10,13 +10,13 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Id)
+            @Html.DisplayNameFor(model=>model.Id)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.gender)
+            @Html.DisplayNameFor(model => model.Gender)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Address)
@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.gender)
+                @Html.DisplayFor(modelItem => item.Gender)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Address)
