@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MVCHandsOnPractice"
+    "\\MVCHandsOnPractice",
+    "\\MVCHandsOnPractice\\Controllers"
   ],
   "SelectedNode": "\\MVCHandsOnPractice.sln",
   "PreviewInSolutionExplorer": false

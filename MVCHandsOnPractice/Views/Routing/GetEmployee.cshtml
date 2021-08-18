@@ -1,4 +1,4 @@
-﻿@model MVCHandsOnPractice.Models.Employee
+﻿@model MVCHandsOnPractice.Models.EmployeeModel
 
 @{
     ViewBag.Title = "GetEmployee";
@@ -13,7 +13,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Id)
+            @Html.DisplayNameFor(model=>model.Id)
         </dt>
 
         <dd>
@@ -28,11 +28,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.gender)
+            @Html.DisplayNameFor(model => model.Gender)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.gender)
+            @Html.DisplayFor(model => model.Gender)
         </dd>
 
         <dt>

@@ -15,7 +15,7 @@ namespace MVCHandsOnPractice.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult SubmitEmployeeData(Employee emp)
+        public ActionResult SubmitEmployeeData(EmployeeModel emp)
         {
             if (ModelState.IsValid)
             {
