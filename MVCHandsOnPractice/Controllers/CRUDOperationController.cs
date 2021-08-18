@@ -17,7 +17,7 @@ namespace MVCHandsOnPractice.Controllers
         {
             DbOperationObj = new EmployeeDbOperation();
         }
-       
+       // localhost:xxxxx/CRUDoperation/allemployee
         public ActionResult AllEmployee()
         {
             var EmpListObj = DbOperationObj.GetAllEmployee();
