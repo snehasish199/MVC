@@ -1,0 +1,93 @@
+﻿@model MVCHandsOnPractice.Models.Student
+
+@{
+    ViewBag.Title = "AdddStudent";
+}
+
+<h2>AdddStudent</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Student</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="button" value="Create" onclick="BtnClick()" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div >
+
+    <h3>Student Details</h3>
+
+    <h2>Id -  <span id="id"></span></h2>
+    <h2>Name -  <span id="name"></span></h2>
+    <h2>Email  - <span id="email"></span></h2>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script>
+    function BtnClick() {
+        var id = $("#Id").val();
+        var name = $("#Name").val();
+        var email = $("#Email").val();
+
+        var obj = {
+            Id: id,
+            Name: name,
+            Email:email
+        }
+        submitData(obj);
+    }
+    function submitData(obj) {
+        $.ajax({
+            url: "/Ajax/AddStudent",
+            method: "POST",
+            data: obj,
+            success: function (data) {
+                data = JSON.parse(data);
+                $("#id").text(data.Id);
+                $("#name").text(data.Name);
+                $("#email").text(data.Email);
+
+            },
+            error: function (err) {
+                console.error(err);
+            }
+        })
+    }
+</script>

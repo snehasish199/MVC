@@ -74,3 +74,5 @@ C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPra
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.xml
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.SqlServer.dll
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.SqlServer.xml
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\Newtonsoft.Json.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\Newtonsoft.Json.xml

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Student Details";
+}
+
+
+<h1>Student Details</h1>
+
+
+<h2>Id -  <span id="Id"></span></h2>
+<h2>Name -  <span id="Name"></span></h2>
+<h2>Email  - <span id="Email"></span></h2>
+
+<script>
+    $.ajax({
+        url: "/Ajax/GetStudent",
+        method: "GET",
+        success: function (data) {
+            data = JSON.parse(data);
+            $("#Id").text(data.Id);
+            $("#Name").text(data.Name);
+            $("#Email").text(data.Email);
+            
+        },
+        error: function (err) {
+            console.error(err);
+        }
+        
+    })
+</script>
