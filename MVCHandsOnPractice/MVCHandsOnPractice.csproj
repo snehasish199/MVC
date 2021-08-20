@@ -125,6 +125,7 @@
     <Compile Include="Controllers\AjaxController.cs" />
     <Compile Include="Controllers\CRUDOperationController.cs" />
     <Compile Include="Controllers\HelperController.cs" />
+    <Compile Include="Controllers\PartialSectionController.cs" />
     <Compile Include="Controllers\RoutingController.cs" />
     <Compile Include="Controllers\ValidationController.cs" />
     <Compile Include="CustomHelper.cs" />
@@ -190,6 +191,11 @@
     <Content Include="Views\Ajax\AddStudent.cshtml" />
     <Content Include="Views\Ajax\AddUsingAjaxForm.cshtml" />
     <Content Include="Views\Ajax\Index.cshtml" />
+    <Content Include="Views\PartialSection\Index.cshtml" />
+    <Content Include="Views\Shared\_StudentDetail.cshtml" />
+    <Content Include="Views\PartialSection\Section.cshtml" />
+    <Content Include="Views\PartialSection\RenderPage.cshtml" />
+    <Content Include="Views\PartialSection\SimpleView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

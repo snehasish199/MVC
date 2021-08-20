@@ -21,6 +21,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @RenderSection("SectionMenuBar",required:false)
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -34,6 +35,7 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            @RenderSection("SectionFooter",required:false)
         </footer>
     </div>
 
