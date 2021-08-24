@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "CacheAtClientSide";
+}
+
+<h2>CacheAtClientSide</h2>
+
+<h3 class=" text-danger ">If you directly(using f5) refresh the page then data store at client side
+    will be deleted and will run the action method again within the duration
+    But if you refresh the page within duration using link  then data stored at client browser will not be 
+    deleted as a result  action method will not be run </h3>
+
+<h2>Current Date Time is - @DateTime.Now</h2>
+<h2><a href="/cachefilter/cacheatclientside"> click me</a></h2>
+

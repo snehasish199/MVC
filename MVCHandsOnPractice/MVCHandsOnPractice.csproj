@@ -124,6 +124,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AjaxController.cs" />
     <Compile Include="Controllers\CRUDOperationController.cs" />
+    <Compile Include="Controllers\Filter\CacheFilterController.cs" />
+    <Compile Include="Controllers\Filter\HandleErrorFilterAtGlobalLevelController.cs" />
+    <Compile Include="Controllers\Filter\HandleErrorAtControllerLevelController.cs" />
+    <Compile Include="Controllers\Filter\HandleErrorFilterController.cs" />
     <Compile Include="Controllers\HelperController.cs" />
     <Compile Include="Controllers\PartialSectionController.cs" />
     <Compile Include="Controllers\RoutingController.cs" />
@@ -196,6 +200,11 @@
     <Content Include="Views\PartialSection\Section.cshtml" />
     <Content Include="Views\PartialSection\RenderPage.cshtml" />
     <Content Include="Views\PartialSection\SimpleView.cshtml" />
+    <Content Include="Views\CacheFilter\Index.cshtml" />
+    <Content Include="Views\CacheFilter\CacheAtServerSide.cshtml" />
+    <Content Include="Views\CacheFilter\CacheAtClientSide.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\CustomError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\HadleErrorFilterAtGlobalLevel\" />
+    <Folder Include="Views\HandleErrorAtControllerLevel\" />
+    <Folder Include="Views\HandleErrorFilter\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
