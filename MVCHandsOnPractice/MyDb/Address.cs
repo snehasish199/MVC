@@ -19,17 +19,16 @@ namespace MVCHandsOnPractice.MyDb
         {
             this.Employee = new HashSet<Employee>();
         }
-
+    
         public int AddressId { get; set; }
         public string Details { get; set; }
         public string State { get; set; }
         public string Country { get; set; }
         public string PinCode { get; set; }
-
+    
         public virtual Address Address1 { get; set; }
         public virtual Address Address2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Employee> Employee { get; set; }
-
     }
 }

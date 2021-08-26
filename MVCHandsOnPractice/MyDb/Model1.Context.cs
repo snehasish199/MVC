@@ -27,5 +27,6 @@ namespace MVCHandsOnPractice.MyDb
     
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<Employee> Employee { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

@@ -22,6 +22,14 @@
     <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="AddressId" Type="int" />
   </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
   <Association Name="FK_Address_Address">
     <End Role="Address" Type="Self.Address" Multiplicity="1" />
     <End Role="Address1" Type="Self.Address" Multiplicity="0..1" />
@@ -49,6 +57,7 @@
   <EntityContainer Name="MVCPracticeModelStoreContainer">
     <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Address_Address" Association="Self.FK_Address_Address">
       <End Role="Address" EntitySet="Address" />
       <End Role="Address1" EntitySet="Address" />

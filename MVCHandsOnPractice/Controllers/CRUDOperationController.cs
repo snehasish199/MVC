@@ -8,6 +8,7 @@ using MVCHandsOnPractice.MyDb;
 
 namespace MVCHandsOnPractice.Controllers
 {
+    [Authorize]
     public class CRUDOperationController : Controller
     {
         // GET: CRUDOperation
@@ -18,12 +19,13 @@ namespace MVCHandsOnPractice.Controllers
             DbOperationObj = new EmployeeDbOperation();
         }
        // localhost:xxxxx/CRUDoperation/allemployee
+     
         public ActionResult AllEmployee()
         {
             var EmpListObj = DbOperationObj.GetAllEmployee();
             return View(EmpListObj);
         }
-        
+       
         public ActionResult AddEmployee()
         {
             return View();

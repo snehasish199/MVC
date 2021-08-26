@@ -61,5 +61,14 @@
       <End Role="Address" EntitySet="Address" />
       <End Role="Employee" EntitySet="Employee" />
     </AssociationSet>
+    <EntitySet Name="User" EntityType="MVCPracticeModel.User" />
   </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

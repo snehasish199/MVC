@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="MVCPracticeModel.Employee" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="MVCPracticeModel.FK_Address_Address" ManuallyRouted="false" />
         <AssociationConnector Association="MVCPracticeModel.FK_Employee_Address" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MVCPracticeModel.User" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
