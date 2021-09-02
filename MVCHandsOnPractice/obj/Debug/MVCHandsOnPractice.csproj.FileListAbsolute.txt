@@ -76,3 +76,8 @@ C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPra
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\EntityFramework.SqlServer.xml
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\Newtonsoft.Json.dll
 C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\Newtonsoft.Json.xml
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\Antlr3.Runtime.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\System.Web.Optimization.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\WebGrease.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\Antlr3.Runtime.pdb
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\MVCHandsOnPractice\bin\System.Web.Optimization.xml
