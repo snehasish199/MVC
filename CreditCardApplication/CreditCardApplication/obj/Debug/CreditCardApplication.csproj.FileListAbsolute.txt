@@ -1,0 +1,6 @@
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\CreditCardApplication\CreditCardApplication\bin\Debug\CreditCardApplication.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\CreditCardApplication\CreditCardApplication\bin\Debug\CreditCardApplication.pdb
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\CreditCardApplication\CreditCardApplication\obj\Debug\CreditCardApplication.csprojAssemblyReference.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\CreditCardApplication\CreditCardApplication\obj\Debug\CreditCardApplication.csproj.CoreCompileInputs.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\CreditCardApplication\CreditCardApplication\obj\Debug\CreditCardApplication.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\CreditCardApplication\CreditCardApplication\obj\Debug\CreditCardApplication.pdb
