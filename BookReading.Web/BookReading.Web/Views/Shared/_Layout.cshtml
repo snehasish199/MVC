@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/bootstrap.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary bg-opacity-50">
+        <div class="container-fluid">
+            <div class="col-3">
+                @Html.ActionLink("Application Name", "Index", "Home")
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="d-grid  nav-item col-1">
+                        @Html.ActionLink("Home", "Index", "Home", null, htmlAttributes: new { @class = "nav-link text-primary" })
+                    </li>
+
+
+                </ul>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.IsInRole("Admin"))
+                    {
+                        <div class="d-flex nav-item col-2 ">
+                            @Html.ActionLink("All Events", "AllEvents", "Admin", null, htmlAttributes: new { @class = "nav-link" })
+                        </div>
+                    }
+                    <div class="d-flex nav-item col-2 ">
+                        @Html.ActionLink("Create Event", "CreateEvent", "home", null, htmlAttributes: new { @class = "nav-link" })
+                    </div>
+                    <div class="d-flex nav-item col-2 ">
+                        @Html.ActionLink("My Events", "MyEvents", "home", null, htmlAttributes: new { @class = "nav-link" })
+                    </div>
+                    <div class="d-flex nav-item col-2 ">
+                        @Html.ActionLink("Invited Events", "InvitedEvent", "home", null, htmlAttributes: new { @class = "nav-link" })
+                    </div>
+                    <div class="d-flex nav-item col-1 ">
+                        @Html.ActionLink("Logout", "LogOut", "Account", null, htmlAttributes: new { @class = "nav-link" })
+                    </div>
+                }
+                else
+                {
+                    <div class="d-flex nav-item col-1 ">
+                        @Html.ActionLink("Login", "Login", "Account", null, htmlAttributes: new { @class = "nav-link" })
+                    </div>
+                    <div class="d-flex nav-item col-1">
+                        @Html.ActionLink("Register", "Register", "Account", null, htmlAttributes: new { @class = "nav-link" })
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </nav>
+   
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    
+
+
+    
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

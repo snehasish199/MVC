@@ -1,0 +1,15 @@
+﻿@model BookReading.Model.BookEvent
+
+
+        <td>
+            @Html.ActionLink(Model.Title,"Details","Home",new{ id = Model.Id},null)
+           
+        </td>
+        <td>
+            @Html.DisplayFor(Model => Model.Date)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(Model => Model.StartTime)
+        </td>
+       
