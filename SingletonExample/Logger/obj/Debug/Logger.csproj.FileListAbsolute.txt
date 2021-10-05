@@ -1,0 +1,6 @@
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\SingletonExample\Logger\bin\Debug\Logger.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\SingletonExample\Logger\bin\Debug\Logger.pdb
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\SingletonExample\Logger\obj\Debug\Logger.csproj.AssemblyReference.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\SingletonExample\Logger\obj\Debug\Logger.csproj.CoreCompileInputs.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\SingletonExample\Logger\obj\Debug\Logger.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\SingletonExample\Logger\obj\Debug\Logger.pdb
