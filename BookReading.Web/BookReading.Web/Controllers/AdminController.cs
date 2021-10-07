@@ -1,4 +1,5 @@
-﻿using BookReading.Business;
+﻿using BookReading.Business.Facade;
+using BookReading.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,17 @@ namespace BookReading.Web.Controllers
     public class AdminController : Controller
     {
         // GET: Admin
-        private readonly IBookReadingOperation _bookReading;
-        public AdminController(IBookReadingOperation bookReading)
+        //  private readonly IBookReadingOperation _bookReading;
+        private readonly IBookReadingAllOperation _facade;
+        public AdminController( IBookReadingAllOperation facade)
         {
-            _bookReading = bookReading;
+            _facade = facade;
         }
       
         public ActionResult Index()
         {
             
-            return View(_bookReading.GetAllEvents());
+            return View(_facade.GetAllEvents());
         }
         public ActionResult AllEvents()
         {

@@ -5,8 +5,9 @@ namespace BookReading.Web.App_Start
 {
     using System;
     using System.Web;
-    using BookReading.Business;
-    using BookReading.Data;
+    using BookReading.Business.Facade;
+    using BookReading.DAL;
+
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
@@ -55,6 +56,7 @@ namespace BookReading.Web.App_Start
                 kernel.Bind<IMyEvents>().To<MyEvents>();
                 kernel.Bind<IInvitedEvents>().To<InvitedEvents>();
                 kernel.Bind<IUserRoleOperation>().To<UserRoleOperation>(); 
+                kernel.Bind<IBookReadingAllOperation>().To<BookReadingAllOperation>(); 
                 
 
                 RegisterServices(kernel);

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BookReading.Business;
-using BookReading.Model;
+using BookReading.DAL;
+
 
 
 namespace BookReading.Web.Controllers
@@ -128,7 +129,7 @@ namespace BookReading.Web.Controllers
             {
                 UserName = User.Identity.Name;
             }
-            catch(NullReferenceException e)
+            catch(NullReferenceException )
             {
 
                 UserName = null;
@@ -145,7 +146,7 @@ namespace BookReading.Web.Controllers
             {
                 UserName = User.Identity.Name;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException )
             {
 
                 UserName = null;

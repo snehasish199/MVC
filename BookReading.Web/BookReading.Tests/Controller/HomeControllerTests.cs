@@ -2,7 +2,7 @@
 using Xunit;
 using Moq;
 using BookReading.Business;
-using BookReading.Model;
+using BookReading.DAL;
 using BookReading.Web.Controllers;
 using System.Web.Mvc;
 using System.Collections.Generic;

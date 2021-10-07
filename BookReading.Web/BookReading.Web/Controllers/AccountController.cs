@@ -1,5 +1,7 @@
 ﻿using BookReading.Business;
-using BookReading.Model;
+using BookReading.Business.Facade;
+using BookReading.DAL;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +14,12 @@ namespace BookReading.Web.Controllers
     public class AccountController : Controller
     {
         // GET: Account
-        private readonly IUserOperation _user;
-        private readonly IUserRoleOperation _userRole;
-        public AccountController(IUserOperation user,IUserRoleOperation userRole)
+        //private readonly IUserOperation _user;
+        //private readonly IUserRoleOperation _userRole;
+        private readonly IBookReadingAllOperation _facade;
+        public AccountController(  IBookReadingAllOperation facade)
         {
-            _user = user;
-            _userRole = userRole;
+            _facade = facade;
         }
         public ActionResult Register()
         {
@@ -28,16 +30,16 @@ namespace BookReading.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-               if( _user.AddUSer(model))
+               if( _facade.AddUSer(model))
                 {
 
-                   var UserID= _user.GetUSerId(model.Email);
+                   var UserID= _facade.GetUSerId(model.Email);
                     UserRole userRole = new UserRole()
                     {
                         UserId = UserID,
                         Role = "User"
                     };
-                    _userRole.SetRole(userRole);
+                    _facade.SetRole(userRole);
 
                     return RedirectToAction("Login");
                 }
@@ -63,7 +65,7 @@ namespace BookReading.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-               if( _user.IsValidUser(model.Email, model.Password))
+               if( _facade.IsValidUser(model.Email, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Email, false);
                    

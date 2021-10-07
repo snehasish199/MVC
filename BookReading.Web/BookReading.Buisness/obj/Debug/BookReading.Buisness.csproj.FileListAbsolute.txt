@@ -1,0 +1,6 @@
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\BookReading.Web\BookReading.Buisness\bin\Debug\BookReading.Buisness.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\BookReading.Web\BookReading.Buisness\bin\Debug\BookReading.Buisness.pdb
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\BookReading.Web\BookReading.Buisness\obj\Debug\BookReading.Buisness.csproj.AssemblyReference.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\BookReading.Web\BookReading.Buisness\obj\Debug\BookReading.Buisness.csproj.CoreCompileInputs.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\BookReading.Web\BookReading.Buisness\obj\Debug\BookReading.Buisness.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\BookReading.Web\BookReading.Buisness\obj\Debug\BookReading.Buisness.pdb

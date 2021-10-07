@@ -17,7 +17,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
     <IISExpressSSLPort>44332</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -143,6 +143,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BookReadingEventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,9 +211,18 @@
     <Content Include="Views\Home\InvitedEvent.cshtml" />
     <Content Include="Views\Shared\_bookShortDesc.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\BookReadingEvent\About.cshtml" />
+    <Content Include="Views\BookReadingEvent\Contact.cshtml" />
+    <Content Include="Views\BookReadingEvent\CreateEvent.cshtml" />
+    <Content Include="Views\BookReadingEvent\Details.cshtml" />
+    <Content Include="Views\BookReadingEvent\Edit.cshtml" />
+    <Content Include="Views\BookReadingEvent\Index.cshtml" />
+    <Content Include="Views\BookReadingEvent\InvitedEvent.cshtml" />
+    <Content Include="Views\BookReadingEvent\MyEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -243,17 +253,17 @@
     <Content Include="Scripts\jquery-3.6.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BookReading.Business\BookReading.Business.csproj">
+    <ProjectReference Include="..\BookReading.Buisness\BookReading.Buisness.csproj">
+      <Project>{3b0ad819-9884-4f4a-8a05-e8008b3ba89f}</Project>
+      <Name>BookReading.Buisness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookReading.Business.Facade\BookReading.Business.Facade.csproj">
+      <Project>{569b0161-e0de-450d-830c-8af63447e9e6}</Project>
+      <Name>BookReading.Business.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookReading.DAL\BookReading.DAL.csproj">
       <Project>{026dd8af-e30e-4871-bdea-0260e5dcca99}</Project>
-      <Name>BookReading.Business</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BookReading.Data\BookReading.Data.csproj">
-      <Project>{DFD2AE0C-A6CC-4A18-9E88-B53396BED63A}</Project>
-      <Name>BookReading.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BookReading.Model\BookReading.Model.csproj">
-      <Project>{588dacd4-6cf4-4d0f-af4a-7cc424cfdbc0}</Project>
-      <Name>BookReading.Model</Name>
+      <Name>BookReading.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

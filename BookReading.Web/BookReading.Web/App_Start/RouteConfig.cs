@@ -16,7 +16,7 @@ namespace BookReading.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "BookReadingEvent", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
