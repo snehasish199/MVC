@@ -30,7 +30,7 @@ namespace ObserverDesignPatternExample
                 
                 Console.WriteLine("Availability changed from {0} to {1} .",this.Availability,availability);
             this.Availability = availability;
-            NotifyObservers();
+           
             }
 
             public void RegisterObserver(IObserver observer)

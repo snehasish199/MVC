@@ -7,10 +7,10 @@ namespace ObserverDesignPatternExample
     public class Observer : IObserver
     {
         public string UserName { get; set; }
-        public Observer(string userName, ISubject subject)
+        public Observer(string userName)
         {
             UserName = userName;
-            subject.RegisterObserver(this);
+          
         }
 
         public void update(string availabiliy)
