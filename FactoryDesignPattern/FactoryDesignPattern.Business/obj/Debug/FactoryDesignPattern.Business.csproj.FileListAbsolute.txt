@@ -1,0 +1,6 @@
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\FactoryDesignPattern\FactoryDesignPattern.Business\bin\Debug\FactoryDesignPattern.Business.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\FactoryDesignPattern\FactoryDesignPattern.Business\bin\Debug\FactoryDesignPattern.Business.pdb
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\FactoryDesignPattern\FactoryDesignPattern.Business\obj\Debug\FactoryDesignPattern.Business.csproj.AssemblyReference.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\FactoryDesignPattern\FactoryDesignPattern.Business\obj\Debug\FactoryDesignPattern.Business.csproj.CoreCompileInputs.cache
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\FactoryDesignPattern\FactoryDesignPattern.Business\obj\Debug\FactoryDesignPattern.Business.dll
+C:\Users\snehasishpramanik\OneDrive - Nagarro\Desktop\MVC Practice\MVCHandsOnPractice\FactoryDesignPattern\FactoryDesignPattern.Business\obj\Debug\FactoryDesignPattern.Business.pdb
